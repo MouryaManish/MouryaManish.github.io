@@ -5,6 +5,7 @@
 -----------------------------------------------------------------------------------*/
 
  jQuery(document).ready(function($) {
+	 
 
 /*----------------------------------------------------*/
 /* FitText Settings
@@ -149,7 +150,7 @@
       var data = 'contactName=' + contactName + '&contactEmail=' + contactEmail +
                '&contactSubject=' + contactSubject + '&contactMessage=' + contactMessage;
 			   
-      $.ajax({
+      /*$.ajax({
 	      type: "POST",
 	      url: "inc/sendEmail.php", 
 	      data: data,
@@ -170,10 +171,15 @@
 
 	      }
 
-      });
+      });*/
+	             $('#image-loader').fadeOut();
+               $('#message-warning').hide();
+               $('#contactForm').fadeOut();
+               $('#message-success').fadeIn();  
       return false;
    });
-
+// tooltip for email
+ $('[data-toggle="tooltip"]').tooltip(); 
 
 });
 

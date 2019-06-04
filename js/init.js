@@ -148,14 +148,12 @@
 
       var data = 'contactName=' + contactName + '&contactEmail=' + contactEmail +
                '&contactSubject=' + contactSubject + '&contactMessage=' + contactMessage;
-
+			   
       $.ajax({
-
 	      type: "POST",
-	      url: "inc/sendEmail.php",
+	      url: "inc/sendEmail.php", 
 	      data: data,
 	      success: function(msg) {
-
             // Message was sent
             if (msg == 'OK') {
                $('#image-loader').fadeOut();

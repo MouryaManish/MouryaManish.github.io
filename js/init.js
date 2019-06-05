@@ -179,7 +179,7 @@
       return false;
    });
 // tooltip for email
- $('[data-toggle="tooltip"]').tooltip(); 
+  $('[data-toggle="tooltip"]').tooltip(); 
 
 });
 
